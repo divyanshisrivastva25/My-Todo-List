@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(26, 10, 41);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  box-shadow: -9px 10px 80px rgb(3, 0, 17);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  box-shadow: inset 0.4em 0.4em 1em blueviolet;
+}
+input:hover {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+#addButton {
+  height: 3rem;
+  width: 7rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: blueviolet;
+  cursor: pointer;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+#addButton:hover {
+  background-color: rgb(87, 34, 136);
+}
+h1 {
+  font-size: 5rem;
+  color: rgb(199, 148, 247);
+  padding-bottom: 60px;
+}
+#todo-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  height: 3rem;
+  width: 27rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 13px;
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: rgb(163, 161, 160);
+}
+#todo-list ul p {
+  flex-grow: 1;
+}
+.delete,
+.edit {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 3px;
+  background: none;
+}
+.edit {
+  margin-right: 12px;
+}
+.delete:hover,
+.edit:hover {
+  background-color: rgb(109, 95, 109);
+  box-shadow: 2px 5px 20px purple;
+  transform: scale(1.3);
+}
